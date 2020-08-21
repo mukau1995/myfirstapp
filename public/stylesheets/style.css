@@ -1,0 +1,562 @@
+/* MOBIEL */ 
+@media (min-width: 280px) and (max-width:785px) {
+    html, body{
+    height: 100%;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    margin-top: 70%;
+    height: 10%;
+    border: 2px transparent rgba(0, 0, 0, 0.537);
+    background-color: rgba(0, 0, 0, 0.311);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+#index{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+    background-image: url('/public/images/afb2.jpg');
+    background-repeat: no-repeat;
+}
+#user-body{
+    background-image: url('/public/images/afb3.jpg');
+    background-repeat: no-repeat;
+}
+.user-detail{
+    border:white 1px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.687);
+    border-top-width: gray thick;
+}
+#user-body h2{
+    font-size: 1.3em;
+}
+#user-body button{
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+#user-body b{
+    font-size: 1.3em;
+}
+h1, h2{
+    text-align: center;
+    color: black;
+}
+
+label{
+    font-size: large;
+    letter-spacing: 1px;
+}
+.form {
+	margin: 0 auto;
+    width: 250px;
+    height: 750px;
+}
+
+.form label{
+	text-align: right;
+    float: left;
+}
+
+.form input{
+    text-align: left;
+    float: right;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=time], select {
+    width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#index h1,p{
+    color: white;
+    text-align: center;
+}
+#check-in button{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#check-in button:hover {background-color:darkgreen}
+
+#check-in button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#check-out button{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(235, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#check-out button:hover {
+    background-color: darkred;
+}
+
+#check-out button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#after{
+    background-image: url('/public/images/afb1.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    }
+#after-box{
+    border: 3px transparent black;
+    background-color: rgba(211, 211, 211, 0.646);
+    border-radius: 8px;
+}
+#after-box h1{
+    font-size: 1.6em;
+    text-align: center;
+}
+#after-box p{
+    font-size: 0.8em;
+    color: red;
+    text-align: center;
+}
+}
+
+/* For ipad: */
+@media (max-width : 1024px) {
+    html, body{
+        height: 100%;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        margin-top: 30%;
+        height: 10%;
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    #index{
+        display: grid;
+        grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+        background-image: url('../images/afb2.jpg');
+        background-repeat: no-repeat;
+    }
+    #user-body{
+        background-image: url('../images/afb3.jpg');
+        background-repeat: no-repeat;
+    }
+    .user-detail{
+        border:white 1px solid;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.687);
+        border-top-width: gray thick;
+    }
+    #user-body h2{
+        font-size: 1.3em;
+    }
+    #user-body button{
+        margin-top: 20px;
+        margin-right: 50px;
+        padding: 20px;
+        background-color: blanchedalmond;
+    }
+    #user-body b{
+        font-size: 1.3em;
+    }
+    h1, h2{
+        text-align: center;
+        color: black;
+    }
+    
+    label{
+        font-size: large;
+        letter-spacing: 1px;
+    }
+    .form {
+        margin: 0 auto;
+        width: 250px;
+        height: 750px;
+    }
+    
+    .form label{
+        text-align: right;
+        float: left;
+    }
+    
+    .form input{
+        text-align: left;
+        float: right;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=time], select {
+        width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+    }
+    input[type=date], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #index h1,p{
+        color: white;
+        text-align: center;
+    }
+    #check-in button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-in button:hover {background-color:darkgreen}
+    
+    #check-in button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #check-out button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: rgb(235, 76, 76);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-out button:hover {
+        background-color: darkred;
+    }
+    
+    #check-out button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    #after{
+        background-image: url('../images/afb1.jpg');
+        background-repeat: no-repeat;
+        }
+    #after-box{
+        border: 3px transparent black;
+        background-color: rgba(211, 211, 211, 0.646);
+        border-radius: 8px;
+    }
+    #after-box h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    #after-box p{
+        font-size: 2em;
+        color: red;
+        text-align: center;
+    }
+    #after img{
+        height: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+/* DESKTOP */
+@media (min-width:1024px){
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        margin-top: 30%;
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    #index{
+        display: grid;
+        grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+        background-image: url('../images/afb2.jpg');
+        background-repeat: no-repeat;
+    }
+    #user-body{
+        background-image: url('../images/afb3.jpg');
+        background-repeat: no-repeat;
+    }
+    .user-detail{
+        border:white 1px solid;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.687);
+        border-top-width: gray thick;
+    }
+    #user-body h2{
+        font-size: 1.3em;
+    }
+    #user-body button{
+        margin-top: 20px;
+        margin-left: 50px;
+        padding: 20px;
+        background-color: blanchedalmond;
+    }
+    #user-body b{
+        font-size: 1.3em;
+    }
+    h1, h2{
+        text-align: center;
+        color: black;
+    }
+    
+    label{
+        font-size: large;
+        letter-spacing: 1px;
+    }
+    .form {
+        margin: 0 auto;
+        width: 250px;
+        height: 750px;
+    }
+    
+    .form label{
+        text-align: right;
+        float: left;
+    }
+    
+    .form input{
+        text-align: left;
+        float: right;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=time], select {
+        width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+    }
+    input[type=date], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #index h1,p{
+        color: white;
+        text-align: center;
+    }
+    #check-in button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-in button:hover {background-color:darkgreen}
+    
+    #check-in button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #check-out button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: rgb(235, 76, 76);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-out button:hover {
+        background-color: darkred;
+    }
+    
+    #check-out button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    #after{
+        background-image: url('../images/afb1.jpg');
+        background-repeat: no-repeat;
+        }
+    #after-box{
+        border: 3px transparent black;
+        background-color: rgba(211, 211, 211, 0.646);
+        border-radius: 8px;
+    }
+    #after-box h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    #after-box p{
+        font-size: 2em;
+        color: red;
+        text-align: center;
+    }
+    #after img{
+        height: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
