@@ -41,6 +41,7 @@ app.get('/checkout', function(req, res, next) {
        res.redirect('/checkout-page');
   });
 
+  
 
 // catch 404 and forward to error handler
 
