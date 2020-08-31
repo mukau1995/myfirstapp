@@ -11,10 +11,10 @@ var mysql = require('mysql');
 // });
 // module.exports = conn;
 
-var connection = mysql.createConnection('mysql://b0604f855687f6:988398b8@eu-cdbr-west-03.cleardb.net/heroku_ddd16763701e251?reconnect=true');
+var pool = mysql.createPool('mysql://b0604f855687f6:988398b8@eu-cdbr-west-03.cleardb.net/heroku_ddd16763701e251?reconnect=true');
 connection.connect(function(err) {
   if (err) throw err;
   console.log('Database is connected successfully !');
 });
 
-module.exports = connection;
+module.exports = pool;
