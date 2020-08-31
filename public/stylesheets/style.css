@@ -255,6 +255,41 @@ input[type=date], select {
         height: 100%;
         width: 100%;
     }
+    #homepage_body {
+        background-image: url('../images/dinner.jpg');
+    }
+    #homepage_body p{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    #homepage_body h1{
+        border: 2px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.543);
+    
+    }
+    #text_homepage{
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.742);
+    }
+    #homepage_button button{
+        margin-top: 70px;
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: x-large;
+        outline: none;
+        color: #fff;
+        background-color: #935f1287;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
     header{
         grid-area: header;
         
@@ -473,6 +508,41 @@ input[type=date], select {
 @media (min-width:1025px){
     html, body{
         height: 100%;
+    }
+    #homepage_body {
+        background-image: url('../images/dinner.jpg');
+    }
+    #homepage_body p{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    #homepage_body h1{
+        border: 2px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.543);
+    
+    }
+    #text_homepage{
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.742);
+    }
+    #homepage_button button{
+        margin-top: 70px;
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: x-large;
+        outline: none;
+        color: #fff;
+        background-color: #935f1287;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
     }
     header{
         grid-area: header;
