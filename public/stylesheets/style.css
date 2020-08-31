@@ -3,6 +3,41 @@
     html, body{
     height: 100%;
 }
+#homepage_body {
+    background-image: url('../images/dinner.jpg');
+}
+#homepage_body p{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+#homepage_body h1{
+    border: 2px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.543);
+
+}
+#text_homepage{
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+#homepage_button button{
+    margin-top: 70px;
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: x-large;
+    outline: none;
+    color: #fff;
+    background-color: #935f1287;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
 header{
     grid-area: header;
 }
@@ -19,18 +54,27 @@ footer{
     font-size: 0.8em;
     text-align: center;
 }
+#myfooter{
+    margin-top: 80%;
+}
 #index{
     display: grid;
     grid-template-areas:
     'header header header'
     'main main main'
     'footer footer footer';
-    background-image: url('/public/images/afb2.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../images/afb2.jpg');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
 }
 #user-body{
-    background-image: url('/public/images/afb3.jpg');
-    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url('../images/afb3.jpg');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
 }
 .user-detail{
     border:white 1px solid;
@@ -182,6 +226,12 @@ input[type=date], select {
     color: red;
     text-align: center;
 }
+#contact-after{
+    background-color: rgb(228, 186, 112);
+    border: 2px solid rgba(0, 0, 0, 0.242);
+    margin-top: 50px;
+    border-radius: 3px;
+}
 #bedankt{
     border: transparent 2px lightgrey;
     background-color: rgba(211, 211, 211, 0.831);
@@ -193,15 +243,21 @@ input[type=date], select {
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
 }
+#homepage_header img{
+    height: 200px;
+    width: 100%;
+}
 }
 
 /* For ipad: */
 @media (max-width : 1024px) {
     html, body{
         height: 100%;
+        width: 100%;
     }
     header{
         grid-area: header;
+        
     }
     main{
         grid-area: main;
@@ -216,6 +272,9 @@ input[type=date], select {
         font-size: 0.8em;
         text-align: center;
     }
+    #myfooter{
+        margin-top: 40%;
+    }
     #index{
         display: grid;
         grid-template-areas:
@@ -223,11 +282,17 @@ input[type=date], select {
         'main main main'
         'footer footer footer';
         background-image: url('../images/afb2.jpg');
-        background-repeat: no-repeat;
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
     }
     #user-body{
         background-image: url('../images/afb3.jpg');
-        background-repeat: no-repeat;
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
     }
     .user-detail{
         border:white 1px solid;
@@ -258,8 +323,8 @@ input[type=date], select {
     }
     .form {
         margin: 0 auto;
-        width: 250px;
-        height: 750px;
+        width: 280px;
+        height: 100%;
     }
     
     .form label{
@@ -382,6 +447,12 @@ input[type=date], select {
         width: 50%;
         margin-left: 25%;
     }
+    #contact-after{
+        background-color: rgb(228, 186, 112);
+        margin-top: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.242);
+        border-radius: 3px;
+    }
     #bedankt{
         margin-top: 100px;
         border: transparent 2px lightgrey;
@@ -394,12 +465,14 @@ input[type=date], select {
         background-image: url('../images/header.jpg');
         background-repeat: no-repeat;
     }
+    #homepage_header{
+        width: 100%;
+}
 }
 /* DESKTOP */
-@media (min-width:1024px){
+@media (min-width:1025px){
     html, body{
         height: 100%;
-        width: 100%;
     }
     header{
         grid-area: header;
@@ -416,18 +489,25 @@ input[type=date], select {
         font-size: 0.8em;
         text-align: center;
     }
+
     #index{
         display: grid;
         grid-template-areas:
-        'header header header'
-        'main main main'
+        'header header header header'
+        'main main main main'
         'footer footer footer';
         background-image: url('../images/afb2.jpg');
-        background-repeat: no-repeat;
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
     }
     #user-body{
         background-image: url('../images/afb3.jpg');
-        background-repeat: no-repeat;
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
     }
     .user-detail{
         border:white 1px solid;
@@ -459,7 +539,7 @@ input[type=date], select {
     .form {
         margin: 0 auto;
         width: 250px;
-        height: 750px;
+        height: 950px;
     }
     
     .form label{
@@ -582,6 +662,12 @@ input[type=date], select {
         width: 50%;
         margin-left: 25%;
     }
+    #contact-after{
+        background-color: rgb(228, 186, 112);
+        margin-top: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.242);
+        border-radius: 3px;
+    }
     #bedankt{
         margin-top: 100px;
         border: transparent 2px lightgrey;
@@ -593,5 +679,90 @@ input[type=date], select {
     #checkout-bedankt{
         background-image: url('../images/header.jpg');
         background-repeat: no-repeat;
+    }
+}
+#contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #a27618bd;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #subject{
+      max-width: 97%;
+  }
+#homepage_header img{
+    width: 100%;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75,input[type=text],input[type=number],input[type=email] {
+      width: 95%;
+      margin-top: 0;
+    }
+    input[type=submit]{
+        width: 100%;
+        margin-top: 0;
     }
 }
