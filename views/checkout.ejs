@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uitchecken</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/currentTime.js"></script>
+</head>
+<body id="user-body">
+    <header>
+    </header>
+    <main>
+    <div class="user-detail">
+        <form action="/checkout/create" method="POST" class="form">
+        <h2>Uitchecken</h2>
+        <hr>
+        <label>Naam</label><br>
+        <input type="text" placeholder="Vul hier je naam in" name="Naam" required><br>
+        <label>Uur</label><br>
+        <input type="time" placeholder="bv. 16:30" min="00:00" max="24:00" name="Uur" id="currentTime" required> <br>
+        <button id="checkout-knop" type="submit" onclick="newlocation()"><b>Uitchecken</b></button>
+        </form>
+    </div>
+</main>
+    <footer id="myfooter">
+        <i>&copy; Copyright 2020 Elie Mukau Ambel || All rights reserved.</i>        
+    </footer>   
+<script>
+var date = new Date();
+var currentDate = date.toISOString().slice(0,10);
+var currentTime = date.getHours() + ':' + date.getMinutes();
+
+document.getElementById('currentTime').value = currentTime;
+
+function newLocation() { 
+    window.location.href="/after"; 
+}
+</script>
+</body>
+</html>

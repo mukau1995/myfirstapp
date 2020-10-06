@@ -1,0 +1,1071 @@
+/* MOBIEL */ 
+@media only screen and (min-width: 280px) and (max-width:785px) {
+    html, body{
+    height: 100%;
+}
+#homepage_body {
+    background-image: url('../images/koffie.jpg');
+}
+#homepage_body p{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+#homepage_body h1{
+    border: 2px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.543);
+
+}
+#text_homepage{
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+#homepage_button button{
+    margin-top: 70px;
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: x-large;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(184, 114, 9);
+}
+#homepage_button button:hover{
+background-color:rgba(169, 169, 169, 0.756)
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer' ;
+}
+
+#index{
+    background-image: url('../images/afb2.jpg');
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
+}
+#user-body{
+    background-image: url('../images/afb3.jpg');
+    height: 100%;
+    /* Center and scale the image nicely */
+}
+.user-detail{
+    border:white 1px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.687);
+    border-top-width: gray thick;
+}
+
+#user-body h2{
+    font-size: 1.3em;
+}
+
+#user-body b{
+    font-size: 1.3em;
+}
+#register-knop{
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 470px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: calc(100% - 100px);
+}
+    body>#myfooter{
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 130px;
+        height: 20px;
+    }
+h1, h2{
+    text-align: center;
+    color: black;
+}
+
+label{
+    font-size: large;
+    letter-spacing: 1px;
+}
+.form {
+    margin: 0 auto;
+    width: 250px;
+    height: 950px;
+}
+
+.form label{
+    text-align: right;
+    float: left;
+}
+
+.form input{
+    text-align: left;
+    float: right;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=time], select {
+    width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#index h1,p{
+    color: white;
+    text-align: center;
+}
+#check-in button{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#check-in button:hover {background-color:darkgreen}
+
+#check-in button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#check-out button{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(235, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#check-out button:hover {
+    background-color: darkred;
+}
+
+#check-out button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#checkout-knop{
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 140px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: calc(100% - 100px);
+}
+
+#after{
+    background-image: url('/public/images/afb1.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    }
+#after-box{
+    border: 3px transparent black;
+    background-color: rgba(211, 211, 211, 0.646);
+    border-radius: 8px;
+}
+#after-box h1{
+    font-size: 1.6em;
+    text-align: center;
+}
+#after-box p{
+    font-size: 0.8em;
+    color: red;
+    text-align: center;
+}
+#contact-after{
+    background-color: rgb(228, 186, 112);
+    border: 2px solid rgba(0, 0, 0, 0.242);
+    margin-top: 50px;
+    border-radius: 3px;
+}
+#bedankt{
+    border: transparent 2px lightgrey;
+    background-color: rgba(211, 211, 211, 0.831);
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}
+#checkout-bedankt{
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+}
+#homepage_header img{
+    height: 200px;
+    width: 100%;
+}
+#contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #a27618bd;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  #contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .rij:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#homepage_header img{
+    width: 100%;
+    height: 300px;
+    }
+}
+
+/* For ipad: */
+@media only screen and (max-width : 1024px) {
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    #homepage_body {
+        background-image: url('../images/koffie.jpg')
+    }
+    #homepage_body p{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    #homepage_body h1{
+        border: 2px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.543);
+    
+    }
+    #text_homepage{
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.742);
+    }
+    #homepage_button button{
+        margin-top: 70px;
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: x-large;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #homepage_button button:hover{
+        background-color:rgba(169, 169, 169, 0.756)
+        }
+    header{
+        grid-area: header;
+        
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    body>#myfooter{
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 200px;
+        height: 20px;
+    }
+    body{
+        display: grid;
+        grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer';
+    }
+    #index{
+        background-image: url('../images/afb2.jpg');
+            /* Center and scale the image nicely */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+    #user-body{
+        background-image: url('../images/afb3.jpg');
+        height: 100%;
+
+    }
+    .user-detail{
+        border:white 1px solid;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.687);
+        border-top-width: gray thick;
+    }
+    #user-body h2{
+        font-size: 1.3em;
+    }
+    #register-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 470px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
+    #user-body b{
+        font-size: 1.3em;
+    }
+
+    h1, h2{
+        text-align: center;
+        color: black;
+    }
+    
+    label{
+        font-size: large;
+        letter-spacing: 1px;
+    }
+    .form {
+        margin: 0 auto;
+        width: 280px;
+        height: 100%;
+    }
+    
+    .form label{
+        text-align: right;
+        float: left;
+    }
+    
+    .form input{
+        text-align: left;
+        float: right;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=time], select {
+        width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+    }
+    input[type=date], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #index h1,p{
+        color: white;
+        text-align: center;
+    }
+
+    #check-in button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-in button:hover {background-color:darkgreen}
+    
+    #check-in button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #check-out button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: rgb(235, 76, 76);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-out button:hover {
+        background-color: darkred;
+    }
+    
+    #check-out button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #checkout-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 140px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
+    
+    #after{
+        background-image: url('../images/afb1.jpg');
+        background-repeat: no-repeat;
+        }
+    #after-box{
+        border: 3px transparent black;
+        background-color: rgba(211, 211, 211, 0.646);
+        border-radius: 8px;
+    }
+    #after-box h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    #after-box p{
+        font-size: 2em;
+        color: red;
+        text-align: center;
+    }
+    #after img{
+        height: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #contact-after{
+        background-color: rgb(228, 186, 112);
+        margin-top: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.242);
+        border-radius: 3px;
+    }
+    #bedankt{
+        margin-top: 100px;
+        border: transparent 2px lightgrey;
+        background-color: rgba(211, 211, 211, 0.831);
+        font-size: 1.5em;
+        text-align: center;
+        border-radius: 3px;
+    }
+    #checkout-bedankt{
+        background-image: url('../images/header.jpg');
+        background-repeat: no-repeat;
+    }
+    #homepage_header img{
+        height: 200px;
+        width: 100%;
+    }
+    #contactformId {
+        box-sizing: border-box;
+        height: 100%;
+      }
+      .container>p{
+          color: black;
+      }
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      input[type=email]{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #a27618bd;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      #contactformId {
+        box-sizing: border-box;
+        height: 100%;
+      }
+      .container>p{
+          color: black;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .rij:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #onderwerp{
+          max-width: 93%;
+      }
+    #homepage_header img{
+        width: 100%;
+        height: 300px;
+        }
+    }
+/* DESKTOP */ 
+@media only screen and (min-width:1024px){
+
+    html, body{
+        height: 100%;
+    }
+    #homepage_body {
+        background-image: url('../images/koffie.jpg');
+    }
+    #homepage_body p{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    #homepage_body h1{
+        border: 2px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.543);
+    
+    }
+    #text_homepage{
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.742);
+    }
+    #homepage_button button{
+        margin-top: 70px;
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: x-large;
+        outline: none;
+        color: #fff;
+        background-color:black;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #homepage_button button:hover{
+        background-color:rgba(169, 169, 169, 0.756)
+        }
+    header{
+        grid-area: header;
+        margin: 0;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    body>#myfooter{
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 200px;
+        height: 20px;
+    }
+
+    body{
+        display: grid;
+        grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer';
+    }
+    #index{
+        background-image: url('../images/afb2.jpg');
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    #user-body{
+        background-image: url('../images/afb3.jpg');
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
+    }
+    .user-detail{
+        border:white 1px solid;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.687);
+        border-top-width: gray thick;
+    }
+    #user-body h2{
+        font-size: 1.3em;
+    }
+    #register-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 470px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
+
+    #user-body b{
+        font-size: 1.3em;
+    }
+    h1, h2{
+        text-align: center;
+        color: black;
+    }
+    
+    label{
+        font-size: large;
+        letter-spacing: 1px;
+    }
+    .form {
+        margin: 0 auto;
+        width: 250px;
+        height: 100;
+    }
+    
+    .form label{
+        text-align: right;
+        float: left;
+    }
+    
+    .form input{
+        text-align: left;
+        float: right;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=time], select {
+        width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+    }
+    input[type=date], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #index h1,p{
+        color: white;
+        text-align: center;
+    }
+
+    #check-in button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-in button:hover {background-color:darkgreen}
+    
+    #check-in button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #check-out button{
+        position: absolute;
+        left: 50px;
+        width: calc(100% - 100px);
+        padding: 15px 25px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: rgb(235, 76, 76);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    #check-out button:hover {
+        background-color: darkred;
+    }
+    
+    #check-out button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #checkout-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 140px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
+    
+    #after{
+        background-image: url('../images/afb1.jpg');
+        background-repeat: no-repeat;
+        }
+    #after-box{
+        border: 3px transparent black;
+        background-color: rgba(211, 211, 211, 0.646);
+        border-radius: 8px;
+    }
+    #after-box h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    #after-box p{
+        font-size: 2em;
+        color: red;
+        text-align: center;
+    }
+    #after img{
+        height: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #contact-after{
+        background-color: rgb(228, 186, 112);
+        margin-top: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.242);
+        border-radius: 3px;
+    }
+    #bedankt{
+        margin-top: 100px;
+        border: transparent 2px lightgrey;
+        background-color: rgba(211, 211, 211, 0.831);
+        text-align: center;
+        font-size: 2em;
+        border-radius: 3px;
+    }
+    #checkout-bedankt{
+        background-image: url('../images/header.jpg');
+        background-repeat: no-repeat;
+    }
+#contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #a27618bd;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  #contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .rij:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #onderwerp{
+      max-width: 97%;
+  }
+#homepage_header img{
+    width: 100%;
+    height: 300px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75,input[type=text],input[type=number],input[type=email] {
+      width: 95%;
+      margin-top: 0;
+    }
+    input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

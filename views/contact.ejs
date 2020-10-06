@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Contact</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/nodemailer.js"></script>
+    <link rel="icon" type="image/png" href="/banner.png" />
+</head>
+<body>
+  <header>
+    <div id="bannerss">
+      <div id="wrappers" style="width:100%; overflow:hidden;">
+          <div id="containers" style="width:100%; margin-right:auto;">
+          </div>
+      </div>
+  </div> 
+</header>
+  <main id="contactformId">
+  <div class="container">
+    <h1>CONTACTFORMULIER</h1>
+    <p>Heeft u een vraag, vul hieronder uw gegevens in en ik neem zo spoedig mogelijk contact met u op!</p>
+    <form id="contactform" action="/contact/create" method="POST">
+      <div class="rij">
+        <div class="col-25">
+          <label for="fname">Naam</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="achternaam" name="achternaam" placeholder="bv. Janssens">
+        </div>
+      </div>
+      <div class="rij">
+        <div class="col-25">
+          <label for="lname">Voornaam</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="voornaam" name="voornaam" placeholder="bv. Bart">
+        </div>
+      </div>
+      <div class="rij">
+        <div class="col-25">
+          <label for="email">E-mailadres</label>
+        </div>
+          <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="bv. janssensbart@hotmail.com">
+          </div>
+        </div>
+        <div class="rij">
+          <div class="col-25">
+            <label for="country">Tel.nummer</label>
+          </div>
+            <div class="col-75">
+              <input type="text" id="telnumber" name="telnumber" placeholder="bv. 04XX XX XX XX">
+            </div>
+          </div>
+  
+      <div class="rij">
+        <div class="col-25">
+          <label for="subject">Onderwerp</label>
+        </div>
+        <div class="col-75">
+          <textarea id="onderwerp" name="onderwerp" placeholder="Uw bericht.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="rij">
+        <input type="submit" value="Verstuur">
+      </div>
+    </form>
+  </div>
+  </main>
+  <footer id="myfooter">
+    <i>&copy; Copyright 2020 Elie Mukau Ambel || All rights reserved.</i>        
+</footer>
+</body>
+</html>
