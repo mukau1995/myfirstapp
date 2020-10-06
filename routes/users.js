@@ -2,9 +2,6 @@ var express = require('express');
 var router = express.Router();
 var db=require('../database');
 
-
-/* GET users listing. */
-
 router.get('/', function(req, res, next) {
   res.render('user');
 });
@@ -20,11 +17,12 @@ router.post('/create', function(req, res, next) {
   var telefoonnummer      = req.body.Telefoonnummer;
   var eenemail      = req.body.Email;
 
- var sql = `INSERT INTO Restaurant1 (Naam, Adres, PostcodeGemeente, Tafel, Uur, Datum, Telefoonnummer, Email) VALUES ('${eenNaam}', '${eenAdres}', '${eenPostcode}', '${eenTafel}', '${eenUur}', '${eenDatum}','${telefoonnummer}','${eenemail}')`;
+ var sql = `INSERT INTO restaurant1 (Naam, Adres, PostcodeGemeente, Tafel, Uur, Datum, Telefoonnummer, Email) VALUES ('${eenNaam}', '${eenAdres}', '${eenPostcode}', '${eenTafel}', '${eenUur}', '${eenDatum}','${telefoonnummer}','${eenemail}')`;
  db.query(sql,function (err, data) {
     if (err) throw err;
          console.log("record inserted");
      });
      res.redirect('/after');
 });
+
 module.exports = router;

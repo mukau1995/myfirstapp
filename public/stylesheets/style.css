@@ -1,10 +1,10 @@
 /* MOBIEL */ 
-@media (min-width: 280px) and (max-width:785px) {
+@media only screen and (min-width: 280px) and (max-width:785px) {
     html, body{
     height: 100%;
 }
 #homepage_body {
-    background-image: url('../images/dinner.jpg');
+    background-image: url('../images/koffie.jpg');
 }
 #homepage_body p{
     color: white;
@@ -33,11 +33,15 @@
     font-size: x-large;
     outline: none;
     color: #fff;
-    background-color: #935f1287;
+    background-color: black;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px rgb(184, 114, 9);
 }
+#homepage_button button:hover{
+background-color:rgba(169, 169, 169, 0.756)
+}
+
 header{
     grid-area: header;
 }
@@ -46,35 +50,27 @@ main{
 }
 footer{
     grid-area: footer;
-    margin-top: 70%;
-    height: 10%;
-    border: 2px transparent rgba(0, 0, 0, 0.537);
-    background-color: rgba(0, 0, 0, 0.311);
-    color: white;
-    font-size: 0.8em;
-    text-align: center;
+
 }
-#myfooter{
-    margin-top: 80%;
-}
-#index{
+
+body{
     display: grid;
     grid-template-areas:
-    'header header header'
-    'main main main'
-    'footer footer footer';
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer' ;
+}
+
+#index{
     background-image: url('../images/afb2.jpg');
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-size: cover;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-size: cover;
 }
 #user-body{
-    height: 100%;
     background-image: url('../images/afb3.jpg');
+    height: 100%;
     /* Center and scale the image nicely */
-    background-position: center;
-    background-size: cover;
 }
 .user-detail{
     border:white 1px solid;
@@ -82,18 +78,33 @@ footer{
     background-color: rgba(255, 255, 255, 0.687);
     border-top-width: gray thick;
 }
+
 #user-body h2{
     font-size: 1.3em;
 }
-#user-body button{
-    margin-top: 20px;
-    margin-left: 50px;
-    padding: 20px;
-    background-color: blanchedalmond;
-}
+
 #user-body b{
     font-size: 1.3em;
 }
+#register-knop{
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 470px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: calc(100% - 100px);
+}
+    body>#myfooter{
+        border: 2px transparent rgba(0, 0, 0, 0.537);
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 130px;
+        height: 20px;
+    }
 h1, h2{
     text-align: center;
     color: black;
@@ -104,13 +115,13 @@ label{
     letter-spacing: 1px;
 }
 .form {
-	margin: 0 auto;
+    margin: 0 auto;
     width: 250px;
-    height: 750px;
+    height: 950px;
 }
 
 .form label{
-	text-align: right;
+    text-align: right;
     float: left;
 }
 
@@ -154,7 +165,6 @@ input[type=date], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 #index h1,p{
     color: white;
     text-align: center;
@@ -205,6 +215,16 @@ input[type=date], select {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+#checkout-knop{
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 140px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: calc(100% - 100px);
+}
 
 #after{
     background-image: url('/public/images/afb1.jpg');
@@ -247,16 +267,95 @@ input[type=date], select {
     height: 200px;
     width: 100%;
 }
+#contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #a27618bd;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  #contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .rij:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#homepage_header img{
+    width: 100%;
+    height: 300px;
+    }
 }
 
 /* For ipad: */
-@media (max-width : 1024px) {
+@media only screen and (max-width : 1024px) {
     html, body{
         height: 100%;
         width: 100%;
     }
     #homepage_body {
-        background-image: url('../images/dinner.jpg');
+        background-image: url('../images/koffie.jpg')
     }
     #homepage_body p{
         color: white;
@@ -285,11 +384,14 @@ input[type=date], select {
         font-size: x-large;
         outline: none;
         color: #fff;
-        background-color: #935f1287;
+        background-color: black;
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #999;
     }
+    #homepage_button button:hover{
+        background-color:rgba(169, 169, 169, 0.756)
+        }
     header{
         grid-area: header;
         
@@ -299,35 +401,34 @@ input[type=date], select {
     }
     footer{
         grid-area: footer;
-        margin-top: 30%;
-        height: 10%;
+    }
+    body>#myfooter{
         border: 2px transparent rgba(0, 0, 0, 0.537);
         background-color: rgba(0, 0, 0, 0.311);
         color: white;
-        font-size: 0.8em;
+        font-size: 1em;
         text-align: center;
+        margin-top: 200px;
+        height: 20px;
     }
-    #myfooter{
-        margin-top: 40%;
-    }
-    #index{
+    body{
         display: grid;
         grid-template-areas:
-        'header header header'
-        'main main main'
-        'footer footer footer';
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer';
+    }
+    #index{
         background-image: url('../images/afb2.jpg');
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-size: cover;
+            /* Center and scale the image nicely */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
     }
     #user-body{
         background-image: url('../images/afb3.jpg');
         height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-size: cover;
+
     }
     .user-detail{
         border:white 1px solid;
@@ -338,15 +439,20 @@ input[type=date], select {
     #user-body h2{
         font-size: 1.3em;
     }
-    #user-body button{
-        margin-top: 20px;
-        margin-right: 50px;
+    #register-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 470px;
         padding: 20px;
-        background-color: blanchedalmond;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
     }
     #user-body b{
         font-size: 1.3em;
     }
+
     h1, h2{
         text-align: center;
         color: black;
@@ -412,6 +518,7 @@ input[type=date], select {
         color: white;
         text-align: center;
     }
+
     #check-in button{
         position: absolute;
         left: 50px;
@@ -458,6 +565,16 @@ input[type=date], select {
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
+    #checkout-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 140px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
     
     #after{
         background-image: url('../images/afb1.jpg');
@@ -500,17 +617,100 @@ input[type=date], select {
         background-image: url('../images/header.jpg');
         background-repeat: no-repeat;
     }
-    #homepage_header{
+    #homepage_header img{
+        height: 200px;
         width: 100%;
-}
-}
-/* DESKTOP */
-@media (min-width:1025px){
+    }
+    #contactformId {
+        box-sizing: border-box;
+        height: 100%;
+      }
+      .container>p{
+          color: black;
+      }
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      input[type=email]{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #a27618bd;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      #contactformId {
+        box-sizing: border-box;
+        height: 100%;
+      }
+      .container>p{
+          color: black;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .rij:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #onderwerp{
+          max-width: 93%;
+      }
+    #homepage_header img{
+        width: 100%;
+        height: 300px;
+        }
+    }
+/* DESKTOP */ 
+@media only screen and (min-width:1024px){
+
     html, body{
         height: 100%;
     }
     #homepage_body {
-        background-image: url('../images/dinner.jpg');
+        background-image: url('../images/koffie.jpg');
     }
     #homepage_body p{
         color: white;
@@ -539,38 +739,47 @@ input[type=date], select {
         font-size: x-large;
         outline: none;
         color: #fff;
-        background-color: #935f1287;
+        background-color:black;
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #999;
     }
+    #homepage_button button:hover{
+        background-color:rgba(169, 169, 169, 0.756)
+        }
     header{
         grid-area: header;
+        margin: 0;
     }
     main{
         grid-area: main;
     }
     footer{
         grid-area: footer;
-        margin-top: 30%;
+    }
+    body>#myfooter{
         border: 2px transparent rgba(0, 0, 0, 0.537);
         background-color: rgba(0, 0, 0, 0.311);
         color: white;
-        font-size: 0.8em;
+        font-size: 1em;
         text-align: center;
+        margin-top: 200px;
+        height: 20px;
     }
 
-    #index{
+    body{
         display: grid;
         grid-template-areas:
         'header header header header'
         'main main main main'
-        'footer footer footer';
+        'footer footer footer footer';
+    }
+    #index{
         background-image: url('../images/afb2.jpg');
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-size: cover;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
     }
     #user-body{
         background-image: url('../images/afb3.jpg');
@@ -588,12 +797,17 @@ input[type=date], select {
     #user-body h2{
         font-size: 1.3em;
     }
-    #user-body button{
-        margin-top: 20px;
-        margin-left: 50px;
+    #register-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 470px;
         padding: 20px;
-        background-color: blanchedalmond;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
     }
+
     #user-body b{
         font-size: 1.3em;
     }
@@ -609,7 +823,7 @@ input[type=date], select {
     .form {
         margin: 0 auto;
         width: 250px;
-        height: 950px;
+        height: 100;
     }
     
     .form label{
@@ -662,6 +876,7 @@ input[type=date], select {
         color: white;
         text-align: center;
     }
+
     #check-in button{
         position: absolute;
         left: 50px;
@@ -708,6 +923,16 @@ input[type=date], select {
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
+    #checkout-knop{
+        background-color:black;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 8px;
+        margin-top: 140px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: calc(100% - 100px);
+    }
     
     #after{
         background-image: url('../images/afb1.jpg');
@@ -750,7 +975,6 @@ input[type=date], select {
         background-image: url('../images/header.jpg');
         background-repeat: no-repeat;
     }
-}
 #contactformId {
     box-sizing: border-box;
     height: 100%;
@@ -799,6 +1023,13 @@ input[type=date], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
+  #contactformId {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .container>p{
+      color: black;
+  }
   
   .col-25 {
     float: left;
@@ -813,20 +1044,20 @@ input[type=date], select {
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .rij:after {
     content: "";
     display: table;
     clear: both;
   }
-  #subject{
+  #onderwerp{
       max-width: 97%;
   }
 #homepage_header img{
     width: 100%;
+    height: 300px;
+    }
 }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .col-25, .col-75,input[type=text],input[type=number],input[type=email] {
       width: 95%;
       margin-top: 0;
@@ -836,3 +1067,5 @@ input[type=date], select {
         margin-top: 0;
     }
 }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

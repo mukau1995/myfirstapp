@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Contact</title>
@@ -22,8 +22,8 @@
   <div class="container">
     <h1>CONTACTFORMULIER</h1>
     <p>Heeft u een vraag, vul hieronder uw gegevens in en ik neem zo spoedig mogelijk contact met u op!</p>
-    <form id="contactform" action="/send" method="POST">
-      <div class="row">
+    <form id="contactform" action="/contact/create" method="POST">
+      <div class="rij">
         <div class="col-25">
           <label for="fname">Naam</label>
         </div>
@@ -31,7 +31,7 @@
           <input type="text" id="achternaam" name="achternaam" placeholder="bv. Janssens">
         </div>
       </div>
-      <div class="row">
+      <div class="rij">
         <div class="col-25">
           <label for="lname">Voornaam</label>
         </div>
@@ -39,7 +39,7 @@
           <input type="text" id="voornaam" name="voornaam" placeholder="bv. Bart">
         </div>
       </div>
-      <div class="row">
+      <div class="rij">
         <div class="col-25">
           <label for="email">E-mailadres</label>
         </div>
@@ -47,16 +47,16 @@
             <input type="email" id="email" name="email" placeholder="bv. janssensbart@hotmail.com">
           </div>
         </div>
-        <div class="row">
+        <div class="rij">
           <div class="col-25">
-            <label for="country">Telefoonnummer</label>
+            <label for="country">Tel.nummer</label>
           </div>
             <div class="col-75">
               <input type="text" id="telnumber" name="telnumber" placeholder="bv. 04XX XX XX XX">
             </div>
           </div>
   
-      <div class="row">
+      <div class="rij">
         <div class="col-25">
           <label for="subject">Onderwerp</label>
         </div>
@@ -64,11 +64,14 @@
           <textarea id="onderwerp" name="onderwerp" placeholder="Uw bericht.." style="height:200px"></textarea>
         </div>
       </div>
-      <div class="row">
+      <div class="rij">
         <input type="submit" value="Verstuur">
       </div>
     </form>
   </div>
   </main>
+  <footer id="myfooter">
+    <i>&copy; Copyright 2020 Elie Mukau Ambel || All rights reserved.</i>        
+</footer>
 </body>
 </html>

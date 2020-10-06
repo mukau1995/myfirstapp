@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">  <title>Welcome</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/qrcode.js"></script>
-    <script src="/dateTime.js"></script>
+    <title>Registreren</title>
+    <script type="text/javascript" src="/currentTime.js"></script>
 </head>
 <body id="user-body">
+    <header>
+    </header>
+    <main>
     <div class="user-detail">
         <form action="/user/create" method="POST" class="form">
         <h2>REGISTREER JE TAFEL</h2>
         <hr>
-        <label>Naam</label><br>
+        <label>Naam</label><br> 
         <input type="text" placeholder="Vul hier je naam in" name="Naam" required><br>
         <label>Adres</label><br>
         <input type="text" placeholder="Geef je adres in" name="Adres"><br>
@@ -28,9 +31,10 @@
         <input type="time" placeholder="bv. 16:30" min="00:00" max="24:00" value="13:30" name="Uur" id="currentTime" required> <br>
         <label>Datum</label><br>
         <input type="date" placeholder="2020-01-01" name="Datum" id="currentDate" required> <br>
-        <button type="submit" onclick="newlocation()"><b>Registreren</b></button>
+        <button id="register-knop" type="submit" onclick="newlocation()"><b>Registreren</b></button>
     </form>
     </div>
+</main>
     <footer id="myfooter">
         <i>&copy; Copyright 2020 Elie Mukau Ambel || All rights reserved.</i>        
 </footer>
@@ -42,10 +46,6 @@ var currentTime = date.getHours() + ':' + date.getMinutes();
 
 document.getElementById('currentDate').value = currentDate;
 document.getElementById('currentTime').value = currentTime;
-
-function newLocation() { 
-    window.location.href="http://localhost:3000/after"; 
-} 
 </script>
 </body>
 </html>
